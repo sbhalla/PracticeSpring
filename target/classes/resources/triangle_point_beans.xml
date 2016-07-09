@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="triangle5" class="com.practice.spring_practice.TrianglePoints" >
+<property name="pointA" ref="point1"></property>
+<property name="pointB" ref="point2"></property>
+<property name="pointC" ref="point3"></property>
+</bean>
+
+<bean id="point1" class="com.practice.spring_practice.Point" p:x="0" p:y="0"></bean>
+<bean id="point2" class="com.practice.spring_practice.Point" p:x="0" p:y="20"></bean>
+<bean id="point3" class="com.practice.spring_practice.Point" p:x="20" p:y="0"></bean>
+
+</beans>

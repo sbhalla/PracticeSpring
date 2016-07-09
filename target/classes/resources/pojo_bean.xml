@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="triangle1" name="triangle2,triangle3;" class="com.practice.spring_practice.TriangleDraw">
+  <constructor-arg name="type" type="java.lang.String" value="Right Angle"></constructor-arg>
+	<constructor-arg name="angle"  type="int" value="90"></constructor-arg>
+	</bean>
+	
+<!-- 	<bean id="triangle1" name="triangle2,triangle3;" class="com.practice.spring_practice.TriangleFactory" ></bean>
+	<bean id="triangleInstanceFactory" class="com.practice.spring_practice.TriangleInstanceFactory" />
+
+	<bean id="triangle1" name="triangle2,triangle3;" factory-method="getTriangleInstance" factory-bean="triangleInstanceFactory" ></bean> -->
+
+</beans>
